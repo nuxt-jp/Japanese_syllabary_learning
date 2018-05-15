@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>HZM-根据顺序点击片假名</title><link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="styles.bd96b2a0.css"><link rel="stylesheet" href="mdui.min.7c325df4.css"></head><body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-drawer-body-left mdui-appbar-with-toolbar"><div id="inOrderKata"><div id="nav">
+                <header class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer',swipe: true}"><i class="mdui-icon material-icons">menu</i></a>
+                <a href="javascript:;" class="mdui-typo-headline mdui-hidden-xs">HZM</a>
+                <a href="javascript:;" class="mdui-typo-title">首页</a>
+                <div class="mdui-toolbar-spacer"></div>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" mdui-dialog="{target: '#search-dialog'}" mdui-tooltip="{content: '搜索'}">search</i></a>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" mdui-dialog="{target: '#login-dialog'}" mdui-tooltip="{content: '登录'}">account_circle</i></a>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons" mdui-tooltip="{content: 'GitHub'}">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width:24px;height:24px">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+                                        c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+                                        c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+                                        c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+                                        c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+                                        c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path></svg>
+                    </i>
+                </a>
+
+            </div>
+        </header>
+            <div class="mdui-drawer" id="drawer"><ul class="mdui-list" mdui-collapse="{accordion: true}">
+                    <a href="index.html" class="mdui-list-item mdui-ripple">
+                        
+                            <span style="font-size:24px" class="mdui-list-item-icon">あ</span>
+                        <div class="mdui-list-item-content">全部</div>
+                    </a>
+                
+                    <a href="test.html" class="mdui-list-item mdui-ripple">
+                        
+                            <i class="mdui-list-item-icon mdui-icon material-icons">edit</i>
+                        <div class="mdui-list-item-content">测验</div>
+                    </a>
+                
+                    <a href="mark.html" class="mdui-list-item mdui-ripple">
+                        
+                            <i class="mdui-list-item-icon mdui-icon material-icons">flag</i>
+                        <div class="mdui-list-item-content">标记</div>
+                    </a>
+                
+                    <a href="about.html" class="mdui-list-item mdui-ripple">
+                        
+                            <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+                        <div class="mdui-list-item-content">关于</div>
+                    </a>
+                </ul><footer id="drawer-footer"><div class="mdui-typo"><div class="mdui-typo-caption-opacity">Powered by<a href="https://imiku.me">Ice-Hazymoon</a></div><div class="mdui-typo-caption-opacity">Copyright © 2016 - 2018</div></div></footer></div><div id="login-dialog" class="mdui-dialog"><div id="login-card"><header class="mdui-valign" v-bind:class="{'mdui-color-teal': !show_login_card, 'mdui-color-theme': show_login_card }"><button class="mdui-btn mdui-btn-icon close-dialog" mdui-dialog-close="{target: '#login-dialog'}"><i class="mdui-icon material-icons">close</i></button><p class="mdui-center mdui-typo-headline">{{show_login_card ? '欢迎回来' : '立即注册'}}</p></header><div id="login-form" v-if="show_login_card"><div class="mdui-textfield mdui-textfield-floating-label"><label class="mdui-textfield-label">邮箱</label><input class="mdui-textfield-input" type="email" required><div class="mdui-textfield-error">邮箱不能为空</div></div><div class="mdui-textfield mdui-textfield-floating-label mdui-m-b-1"><label class="mdui-textfield-label">密码</label><input class="mdui-textfield-input" type="password" required><div class="mdui-textfield-error">密码不能为空</div></div><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-btn-block">登录</button><div class="mdui-text-center mdui-m-t-3 mdui-typo"><a href="javascript:;" @click="switchCard()">立即注册</a><span style="width:30px;display:inline-block"></span><a href="javascript:;">忘记密码</a></div></div><div id="register-form" v-if="!show_login_card"><div class="mdui-textfield mdui-textfield-floating-label"><label class="mdui-textfield-label">邮箱</label><input class="mdui-textfield-input" type="email" required><div class="mdui-textfield-error">账号不能为空</div></div><div class="mdui-textfield mdui-textfield-floating-label email-code"><label class="mdui-textfield-label">邮箱验证码</label><input class="mdui-textfield-input" type="text" required><div class="mdui-textfield-error">验证码不能为空</div><button class="mdui-btn mdui-ripple" id="get-code">发送验证码</button></div><div class="mdui-textfield mdui-textfield-floating-label mdui-m-b-1"><label class="mdui-textfield-label">密码</label><input class="mdui-textfield-input" type="password" required><div class="mdui-textfield-error">密码不能为空</div></div><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-btn-block">立即注册</button><div class="mdui-text-center mdui-m-t-3 mdui-typo"><a href="javascript:;" @click="switchCard">已有账号</a></div></div></div></div><div id="search-dialog" class="mdui-dialog"><button class="mdui-btn mdui-btn-icon close-dialog" mdui-dialog-close="{target: '#login-dialog'}"><i class="mdui-icon material-icons">close</i></button><div class="mdui-textfield mdui-textfield-floating-label mdui-center"><i class="mdui-icon material-icons">search</i><label class="mdui-textfield-label">搜索</label><input class="mdui-textfield-input" @keyup.enter="search"><div class="mdui-textfield-helper">输入罗马音或五十音回车搜索</div></div></div></div><main id="inOrderKata-page" class="mdui-container"><div class="title mdui-typo-display-1 mdui-text-color-theme mdui-valign mdui-clearfix"><div class="ttbox mdui-clearfix"><div class="mdui-float-left tt">根据顺序点击片假名</div><div class="mdui-float-left fraction mdui-m-l-3">分数: {{ fraction }} / 46</div></div><button @click="reset" class="mdui-float-right mdui-m-l-3 mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">重置</button></div><div class="mdui-row-xs-4 mdui-row-sm-4 mdui-row-md-5 mdui-row-lg-5 mdui-grid-list row"><div class="mdui-col" v-for="(item, index) in word"><div class="card mdui-valign mdui-shadow-2 mdui-ripple" @click="inOrder(item, $event)"><span class="mdui-center mdui-typo-headline">{{ item }}</span></div></div></div></main></div><script src="main.59f33f5e.js"></script><script src="inOrderKata.a43e6fe9.js"></script></body></html>
